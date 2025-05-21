@@ -7,5 +7,13 @@ def reverse_string(text):
 def count_words(sentence):
     return len(sentence.split())
 
-def celsius_to_fahrenheit(celsius):
+def celsius_to_fahrenheit(celsius: float) -> float:
+    """Convert temperature from Celsius to Fahrenheit.
+    
+    Args:
+        celsius: Temperature value in Celsius
+        
+    Returns:
+        Temperature value in Fahrenheit
+    """
     return (celsius * 9/5) + 32

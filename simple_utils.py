@@ -4,7 +4,11 @@ def reverse_string(text):
     """Reverses the characters in a string."""
     return text[::-1]
 
-def count_words(sentence):
+def count_words(sentence: str) -> int:
+    """Count the number of words in a sentence.
+
+    Words are considered to be separated by whitespace.
+    """
     return len(sentence.split())
 
 def celsius_to_fahrenheit(celsius: float) -> float:
